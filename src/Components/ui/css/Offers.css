@@ -1,0 +1,154 @@
+.offers {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: "Alegreya Sans SC", sans-serif;
+  position: relative; /* For positioning the scroll buttons */
+}
+
+.scroll-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.scroll-btn {
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background-color: #40916c;
+}
+
+.offers-list {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.offers-list::-webkit-scrollbar {
+  display: none;
+}
+
+.offer-item {
+  flex: 0 0 auto;
+  width: 200px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.offer-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.offer-item h3 {
+  margin-bottom: 10px;
+}
+
+.offer-item p {
+  margin-bottom: 20px;
+}
+
+.offer-item button {
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.offer-item button:hover {
+  background-color: #40916c;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .offers {
+      padding: 30px 15px;
+  }
+
+  .scroll-buttons {
+      top: 60%; /* Lower the position for better alignment on smaller screens */
+  }
+
+  .scroll-btn {
+      padding: 8px 12px;
+      font-size: 18px;
+  }
+
+  .offers-list {
+      gap: 15px;
+      padding: 5px 0; /* Reduce space around the scrollable items */
+  }
+
+  .offer-item {
+      width: 150px; /* Decrease item width for better fit on mobile */
+      padding: 15px;
+  }
+
+  .offer-item img {
+      margin-bottom: 10px; /* Reduce the gap between image and text */
+  }
+
+  .offer-item h3 {
+      font-size: 16px; /* Adjust the heading size */
+      margin-bottom: 8px;
+  }
+
+  .offer-item p {
+      font-size: 14px; /* Adjust font size for mobile */
+      margin-bottom: 15px;
+  }
+
+  .offer-item button {
+      padding: 8px 15px;
+      font-size: 14px;
+  }
+}
+
+/* Extra small screen adjustments */
+@media screen and (max-width: 480px) {
+  .offers {
+      padding: 20px 10px;
+  }
+
+  .offer-item {
+      width: 120px; /* Further reduce item width on very small screens */
+      padding: 10px;
+  }
+
+  .offer-item h3 {
+      font-size: 14px;
+  }
+
+  .offer-item p {
+      font-size: 12px;
+  }
+
+  .offer-item button {
+      padding: 6px 12px;
+      font-size: 12px;
+  }
+}

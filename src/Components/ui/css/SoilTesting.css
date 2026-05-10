@@ -1,0 +1,61 @@
+/* Soil Testing Section Styling */
+.soil-testing {
+  background-color: #eef2e6;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+
+/* Heading Styling */
+.soil-testing h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.soil-testing button {
+  background-color: #40916c;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Button Hover Effect */
+.soil-testing button:hover {
+  background-color: #2d6a4f;
+}
+
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+  .soil-testing {
+      padding: 30px 15px; /* Adjust padding for tablets */
+  }
+
+  .soil-testing h2 {
+      font-size: 1.5rem; /* Slightly smaller font for smaller screens */
+      margin-bottom: 15px;
+  }
+
+  .soil-testing button {
+      padding: 10px 20px; /* Adjust button padding for better fit */
+      font-size: 16px; /* Make the button text slightly smaller */
+  }
+}
+
+@media (max-width: 480px) {
+  .soil-testing {
+      padding: 20px 10px; /* Adjust padding for small mobile screens */
+  }
+
+  .soil-testing h2 {
+      font-size: 1.2rem; /* Reduce the heading size on small screens */
+      margin-bottom: 10px; /* Adjust spacing */
+  }
+
+  .soil-testing button {
+      padding: 10px 20px; /* Keep button padding suitable for mobile */
+      font-size: 14px; /* Reduce button text size */
+  }
+}

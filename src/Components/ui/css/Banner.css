@@ -1,0 +1,102 @@
+.banner {
+  background-image: url('https://img.freepik.com/premium-photo/crops-growing-field-against-sky_1048944-3161750.jpg'); /* Your image */
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Alegreya Sans SC", sans-serif;
+  color: #087B5B;
+  user-select: none;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.banner-title {
+  display: inline-block;
+  font-size: 6rem;      /* Huge font size */
+  font-weight: 900;
+  letter-spacing: 5px;
+  line-height: 1.1;
+  color: #087B5B;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.banner-title .letter {
+  opacity: 0;
+  display: inline-block;
+  animation-name: fadeInUp;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+.banner-title .letter:nth-child(1)  { animation-delay: 0.05s; }
+.banner-title .letter:nth-child(2)  { animation-delay: 0.1s; }
+.banner-title .letter:nth-child(3)  { animation-delay: 0.15s; }
+.banner-title .letter:nth-child(4)  { animation-delay: 0.2s; }
+.banner-title .letter:nth-child(5)  { animation-delay: 0.25s; }
+.banner-title .letter:nth-child(6)  { animation-delay: 0.3s; }
+.banner-title .letter:nth-child(7)  { animation-delay: 0.35s; }
+.banner-title .letter:nth-child(8)  { animation-delay: 0.4s; }
+.banner-title .letter:nth-child(9)  { animation-delay: 0.45s; }
+.banner-title .letter:nth-child(10) { animation-delay: 0.5s; }
+.banner-title .letter:nth-child(11) { animation-delay: 0.55s; }
+.banner-title .letter:nth-child(12) { animation-delay: 0.6s; }
+.banner-title .letter:nth-child(13) { animation-delay: 0.65s; }
+.banner-title .letter:nth-child(14) { animation-delay: 0.7s; }
+.banner-title .letter:nth-child(15) { animation-delay: 0.75s; }
+.banner-title .letter:nth-child(16) { animation-delay: 0.8s; }
+.banner-title .letter:nth-child(17) { animation-delay: 0.85s; }
+.banner-title .letter:nth-child(18) { animation-delay: 0.9s; }
+.banner-title .letter:nth-child(19) { animation-delay: 0.95s; }
+.banner-title .letter:nth-child(20) { animation-delay: 1s; }
+/* Add more if text longer */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 992px) {
+  .banner {
+    height: 450px;
+  }
+  .banner-title {
+    font-size: 4.5rem;
+    letter-spacing: 3px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 300px;
+    padding: 0 25px;
+  }
+  .banner-title {
+    font-size: 3.2rem !important;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner {
+    height: 220px;
+    padding: 0 15px;
+  }
+  .banner-title {
+    font-size: 2.2rem !important;
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+  }
+}

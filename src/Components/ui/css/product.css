@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=San+Francisco:wght@400;700&display=swap');
+
+/* General Product Page Styling */
+.product-page {
+    font-family: 'San Francisco', Arial, sans-serif; /* Use San Francisco font */
+    background-color: #f0f4ff; /* Soft light background */
+    background-image: url('../img/background.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    padding: 20px;
+}
+
+/* Product Section Styling */
+.products-section {
+    padding: 20px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 12px;
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border 0.3s ease;
+    font-size: 25px; /* Increased font size */
+}
+
+.search-bar input:focus {
+    border: 1px solid #2196f3; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5); /* Focus shadow */
+}
+
+.technical-name-btn {
+    padding: 12px 24px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 25px; /* Increased font size */
+}
+
+.technical-name-btn:hover {
+    background-color: #1976d2; /* Darker shade on hover */
+}
+
+/* Product Categories Layout */
+.product-categories {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-categories .category {
+    flex: 1 1 20%;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.product-categories .category img {
+    max-width: 100%; /* Ensure images fit within their container */
+    height: auto; /* Maintain aspect ratio */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-categories .category span {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
+    font-size: 25px; /* Increased font size */
+}
+
+.product-categories .category:hover {
+    transform: translateY(-5px); /* Lift effect */
+}
+
+.no-categories {
+    text-align: center;
+    font-size: 25px; /* Consistent font size */
+    color: #555;
+}
+
+/* Remove underline from all links */
+a {
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: none; /* Keep no underline on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Adjust search bar width on smaller screens */
+    .search-bar input {
+        width: 250px;
+        font-size: 20px; /* Smaller font size on mobile */
+    }
+
+    .technical-name-btn {
+        font-size: 20px; /* Adjust button font size for mobile */
+        padding: 10px 20px;
+    }
+
+    /* Adjust product categories layout for smaller screens */
+    .product-categories {
+        justify-content: space-around;
+    }
+
+    .product-categories .category {
+        flex: 1 1 45%; /* Adjust category width */
+        padding: 8px;
+        font-size: 18px; /* Slightly smaller text */
+    }
+
+    .product-categories .category img {
+        max-width: 90%; /* Slightly reduce image size */
+    }
+
+    .product-categories .category span {
+        font-size: 20px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further reduce input and button sizes on very small screens */
+    .search-bar input {
+        width: 200px;
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .technical-name-btn {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    /* Stack categories vertically for mobile */
+    .product-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-categories .category {
+        flex: 1 1 100%; /* Full width for each category */
+        margin-bottom: 15px; /* Space between categories */
+    }
+
+    .product-categories .category img {
+        max-width: 80%; /* Reduce image size */
+    }
+
+    .product-categories .category span {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    /* Adjust text for no categories */
+    .no-categories {
+        font-size: 20px;
+    }
+}

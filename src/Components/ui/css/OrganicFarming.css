@@ -1,0 +1,177 @@
+/* General Page Styling */
+.organic-farming-page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Section Styling */
+.organic-farming-section {
+    padding: 20px;
+}
+
+.organic-farming-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Info Panel (Left Side) Styling */
+.organic-farming-info {
+    display: flex;
+    gap: 20px;
+}
+
+.info-left {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-left h3, .info-left h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info-left ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.info-left ul li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.read-more-btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Products Grid (Right Side) Styling */
+.info-right {
+    flex: 3;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.product-card h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-card p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.buy-now-btn {
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-now-btn:hover {
+    background-color: #3367d6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info-left, .info-right {
+        flex: 100%;
+    }
+
+    .organic-farming-info {
+        flex-direction: column;
+    }
+
+    .info-left {
+        padding: 15px;
+    }
+
+    .product-card {
+        padding: 12px; /* Reduce padding on product cards for smaller screens */
+    }
+
+    .buy-now-btn {
+        padding: 8px 18px; /* Adjust button size */
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 15px; /* Reduced gap between products */
+    }
+
+    .organic-farming-section {
+        padding: 15px;
+    }
+
+    .info-left, .info-right {
+        padding: 10px; /* Reduced padding on mobile */
+    }
+
+    .info-left h3, .info-left h4 {
+        font-size: 1.2rem; /* Adjust heading font size */
+    }
+
+    .read-more-btn {
+        padding: 8px 15px; /* Reduce button size for mobile */
+        font-size: 0.9rem; /* Smaller font size for buttons */
+    }
+
+    .product-card {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .product-card h4 {
+        font-size: 1rem; /* Reduce product title font size */
+    }
+
+    .product-card p {
+        font-size: 0.9rem; /* Adjust product description font size */
+    }
+
+    .buy-now-btn {
+        padding: 8px 15px; /* Adjust button padding */
+        font-size: 0.9rem; /* Adjust button font size */
+    }
+}

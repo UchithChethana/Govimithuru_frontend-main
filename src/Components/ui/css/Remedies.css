@@ -1,0 +1,180 @@
+/* General Page Styling */
+.remedies-page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Section Styling */
+.remedies-section {
+    padding: 20px;
+}
+
+.remedies-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Info Panel (Left Side) Styling */
+.remedies-info {
+    display: flex;
+    gap: 20px;
+}
+
+.info-left {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-left h3, .info-left h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info-left ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.info-left ul li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.read-more-btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Products Grid (Right Side) Styling */
+.info-right {
+    flex: 3;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.product-card h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-card p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.buy-now-btn {
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-now-btn:hover {
+    background-color: #3367d6;
+}
+
+/* Responsive Design for Tablets and Smaller Screens */
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns for tablets */
+    }
+
+    .info-left, .info-right {
+        flex: 100%; /* Full width for both panels */
+    }
+
+    .remedies-info {
+        flex-direction: column; /* Stack the info panels vertically */
+    }
+
+    /* Adjust buttons for better spacing on smaller screens */
+    .read-more-btn {
+        width: 100%; /* Full width button */
+        margin-top: 15px; /* Space out from the content above */
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: 1fr; /* One column on mobile */
+    }
+
+    /* Adjust text size and padding for better fit on mobile */
+    .product-card {
+        padding: 12px;
+        text-align: left; /* Left-align text on mobile */
+    }
+
+    .product-card img {
+        width: 80px; /* Resize images for smaller screens */
+        height: 80px;
+        margin-bottom: 8px;
+    }
+
+    .product-card h4 {
+        font-size: 16px; /* Smaller font for headings */
+        margin-bottom: 8px;
+    }
+
+    .product-card p {
+        font-size: 14px; /* Adjust font size for better readability */
+        margin-bottom: 10px;
+    }
+
+    .buy-now-btn {
+        font-size: 16px; /* Smaller button font */
+        padding: 8px 16px; /* Adjust button padding */
+        width: 100%; /* Full width button on mobile */
+        margin-top: 15px; /* Space out from the product description */
+    }
+
+    /* Stack the info panels vertically */
+    .remedies-info {
+        flex-direction: column;
+    }
+
+    .info-left {
+        margin-bottom: 20px; /* Add some space between panels */
+    }
+
+    /* Adjust the headings and buttons */
+    .remedies-section h1 {
+        font-size: 20px; /* Smaller font size for header on mobile */
+    }
+}
